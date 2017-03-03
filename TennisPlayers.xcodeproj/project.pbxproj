@@ -13,6 +13,10 @@
 		E44563C81B4C4EAE005E6797 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44563C71B4C4EAE005E6797 /* Images.xcassets */; };
 		E44563CB1B4C4EAE005E6797 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44563C91B4C4EAE005E6797 /* LaunchScreen.xib */; };
 		E44563D71B4C4EAE005E6797 /* TennisPlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44563D61B4C4EAE005E6797 /* TennisPlayersTests.swift */; };
+		E44563E11B4C4F08005E6797 /* TennisPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44563E01B4C4F08005E6797 /* TennisPlayer.swift */; };
+		E4E0C4001B5522F700ED0441 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E0C3FF1B5522F700ED0441 /* Set.swift */; };
+		E4F9A9C61B592FCF00D8D846 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9A9C51B592FCF00D8D846 /* Match.swift */; };
+		E4F9A9C81B59345100D8D846 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9A9C71B59345100D8D846 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		E44563D01B4C4EAE005E6797 /* TennisPlayersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisPlayersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44563D51B4C4EAE005E6797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44563D61B4C4EAE005E6797 /* TennisPlayersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPlayersTests.swift; sourceTree = "<group>"; };
+		E44563E01B4C4F08005E6797 /* TennisPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TennisPlayer.swift; sourceTree = "<group>"; };
+		E4E0C3FF1B5522F700ED0441 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		E4F9A9C51B592FCF00D8D846 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = ../Match.swift; sourceTree = "<group>"; };
+		E4F9A9C71B59345100D8D846 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 			children = (
 				E44563C01B4C4EAE005E6797 /* AppDelegate.swift */,
 				E44563C21B4C4EAE005E6797 /* ViewController.swift */,
+				E44563E01B4C4F08005E6797 /* TennisPlayer.swift */,
+				E4F9A9C51B592FCF00D8D846 /* Match.swift */,
+				E4E0C3FF1B5522F700ED0441 /* Set.swift */,
+				E4F9A9C71B59345100D8D846 /* Game.swift */,
 				E44563C41B4C4EAE005E6797 /* Main.storyboard */,
 				E44563C71B4C4EAE005E6797 /* Images.xcassets */,
 				E44563C91B4C4EAE005E6797 /* LaunchScreen.xib */,
@@ -156,14 +168,18 @@
 		E44563B31B4C4EAE005E6797 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Richard Thomson";
 				TargetAttributes = {
 					E44563BA1B4C4EAE005E6797 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 					};
 					E44563CF1B4C4EAE005E6797 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = E44563BA1B4C4EAE005E6797;
 					};
 				};
@@ -212,7 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E0C4001B5522F700ED0441 /* Set.swift in Sources */,
+				E4F9A9C81B59345100D8D846 /* Game.swift in Sources */,
+				E44563E11B4C4F08005E6797 /* TennisPlayer.swift in Sources */,
 				E44563C31B4C4EAE005E6797 /* ViewController.swift in Sources */,
+				E4F9A9C61B592FCF00D8D846 /* Match.swift in Sources */,
 				E44563C11B4C4EAE005E6797 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +363,7 @@
 				INFOPLIST_FILE = TennisPlayers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -353,6 +374,7 @@
 				INFOPLIST_FILE = TennisPlayers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -371,6 +393,7 @@
 				INFOPLIST_FILE = TennisPlayersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPlayers.app/TennisPlayers";
 			};
 			name = Debug;
@@ -386,6 +409,7 @@
 				INFOPLIST_FILE = TennisPlayersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPlayers.app/TennisPlayers";
 			};
 			name = Release;
@@ -409,6 +433,7 @@
 				E44563DC1B4C4EAE005E6797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E44563DD1B4C4EAE005E6797 /* Build configuration list for PBXNativeTarget "TennisPlayersTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +442,7 @@
 				E44563DF1B4C4EAE005E6797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
